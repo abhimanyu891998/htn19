@@ -42,7 +42,11 @@ def items():
     for filename in os.listdir(foldername):
         print(filename)
         if filename.endswith(".dcm"):
-            ds = pydicom.dcmread(os.path.join(foldername, filename))            
+            ds = pydicom.dcmread(os.path.join(foldername, filename))     
+            dicom_array.append(ds)
+
+    #access form data like this
+    var = request.form['var']
 
     return jsonify([{'title': 'A'}, {'title': 'B'}])
 
