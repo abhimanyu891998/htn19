@@ -1,24 +1,57 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.swp
 
-# dependencies
-/node_modules
-/.idea
+pids
+logs
+results
+tmp
 
+# Optional npm cache directory
+.npm
 
-# testing
-/coverage
+#Build
+public/css/main.css
+.nyc_output/*
 
-# production
-/build
+#Libraries from npm packages
+public/js/lib/bootstrap.min*
+public/js/lib/jquery.min*
+public/js/lib/popper.min*
 
-# misc
+# API keys and secrets
+.env
+
+# Dependency directory
+node_modules
+bower_components
+
+# Editors
+.idea
+.vscode
+*.iml
+modules.xml
+*.ipr
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# OS metadata
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-.yarn.lock
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+Thumbs.db
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
