@@ -1,4 +1,6 @@
 import csv
+import os
+import pydicom
 
 #data.csv and all folders should be on same level as script.py
 with open('data.csv') as csv_file:
